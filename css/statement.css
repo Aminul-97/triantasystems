@@ -1,0 +1,40 @@
+.statementHeader {
+   color: white;
+   text-align: center;
+   width: 100%;
+}
+.statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #123f5a;
+    padding: 50px;
+}
+.statementcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.Text {
+    margin: 15px;
+    padding: 20px;
+	width : 100%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+.Text > h1 {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 800px) {
+    .statement {
+        height: auto;
+    }
+    .statementcard {
+        flex-direction: column;
+        padding: 10px;
+    }
+}

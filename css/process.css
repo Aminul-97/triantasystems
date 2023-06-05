@@ -1,0 +1,58 @@
+.ProcssHeading {
+    text-align: center;
+    padding: 50px;
+    color: #123f5a;
+}
+.WorkingProcess {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+.Diagram {
+    width: 40%;
+}
+.slider {
+    display: flex;
+    align-items: center ;
+    width: 60%;
+}
+.slideText {
+    display: block;
+    position: absolute;
+}
+.txts {
+    margin: 15px;
+	width : 100%;
+    position: relative;
+    animation:animateright 1s;
+}
+@keyframes animateright{from{left:300px;opacity:0} to{left:0;opacity:1}}
+
+@media only screen and (max-width: 800px) {
+    .WorkingProcess {
+        flex-direction: column;
+        padding: 10px;
+        height:max-content;
+        width: 100%;
+    }
+    .Diagram {
+        width: 100%;
+    }
+    .ProcssHeading {
+        padding: 10px;
+    }
+    .slideText {
+        position: relative;
+        text-align: center;
+        height: 200px;
+        overflow: hidden;
+    }
+    .slider {
+        width: 100%;
+        padding: 10px;
+    }
+    .txts {
+        margin: 0;
+    }
+}

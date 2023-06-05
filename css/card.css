@@ -1,0 +1,37 @@
+.services {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.card > img {
+    margin: 10px;
+}
+.card > a {
+    margin: 10px;
+} 
+.serviceHeader {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+} 
+.serviceHeader h1 {
+    color: #123f5a;
+    text-align: center;
+}  
+@media screen and (max-width: 767px) {
+    .services {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}

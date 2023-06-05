@@ -1,0 +1,72 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 50px;
+}
+.messageHeader {
+    color: #123f5a;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.messageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 5px;
+}
+.messageIntro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.messagefield {
+    display: block;
+    margin-right: auto;
+    width: 100%;
+}
+.messagefield > input {
+    display: block;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #123f5a;
+    border-radius: 5px;
+}
+.messagefield > textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #123f5a;
+    border-radius: 5px;
+}
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: #123f5a;
+    border: 1px solid #123f5a;
+    border-radius: 5px;
+    color: white;
+    transition-duration: 0.5s;
+}
+.btn:hover {
+    background-color: white;
+    border : 1px solid #123f5a;
+    color: #123f5a;
+}
+#msg {
+    color: red;
+    font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .messageBox {
+        flex-direction: column;
+    }
+    .messagefield {
+        margin-top: 20px;
+    }
+}
