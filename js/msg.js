@@ -13,10 +13,10 @@ function sentmessage() {
          xhttp = new XMLHttpRequest();
          xhttp.onreadystatechange = function() {
          if (this.readyState == 4 && this.status == 200) {
-             document.getElementById("msg").innerHTML = this.responseText;
+             document.getElementById("msg").innerHTML = null;
          }
         };
-       xhttp.open("GET", "http://redoakpro.com/js/message.php?q="+data, true);
+       xhttp.open("GET", "http://triantasystems.com/js/message.php?q="+data, true);
        xhttp.send();
        //document.getElementById("contact").reset();
        document.getElementById("msg").value = "";
